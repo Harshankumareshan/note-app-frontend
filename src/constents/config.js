@@ -1,0 +1,1 @@
+export const BASE_URL = "https://noteapp-ei00.onrender.com"
