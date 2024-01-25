@@ -31,14 +31,14 @@ export default function Navbar() {
   const nav = useNavigate()
   return (
     <>
-      <Box zIndex={1000} position={"fixed"}  top={0} w={"100%"} h={"10%"} boxShadow={"rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;"} bg={"lightgreen"} px={4}>
-        <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
+      <Box zIndex={1000} position={"fixed"}  top={0} w={"100%"} h={"10%"} boxShadow={"rgba(0, 0, 0, 5.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;"} bg={"lightgreen"} px={2}>
+        <Flex h={12} alignItems={'center'} justifyContent={'space-between'}>
           <Box fontWeight={"bold"} cursor={"pointer"} onClick={()=>{
             nav("/")
-          }} color="black"  padding={"2"} width={"7%"} textAlign={"center"} marginLeft={"10%"} marginTop={"9"} borderRadius={8} display={auth==true?"none":"block "} bg={"yellow"}m >Home</Box>
+          }} color="black" marginTop={"28px"} marginLeft={"3%"}  padding={"8px 12px"} minWidth={"70px"} textAlign={"center"} borderRadius={8} display={auth === true ? "none" : "block"} bg={"yellow"}>Home</Box>
 
           <Flex alignItems={'center'}>
-            <Stack alignItems={"center"} direction={'row'} spacing={10}>
+            <Stack alignItems={"center"} direction={'row'} spacing={5}>
             <Button display={auth==true?"block":"none"}   marginTop={"8%"}  bg={"yellow"}m color={"black"} onClick={()=>{
                     nav("/notes")
                 }}>All Notes</Button>
@@ -63,7 +63,7 @@ export default function Navbar() {
                   minW={0}>
                   <Avatar
                     size={'sm'}
-                    src={'https://avatars.dicebear.com/api/male/username.svg'}
+                    src={'https://img.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg?w=826&t=st=1706153864~exp=1706154464~hmac=9385786fd730b1ab1c22fcc83cc844c744a2da9ec4d50d9a97ea99b302c5ee08'}
                   />
                 </MenuButton>
                 
@@ -72,7 +72,7 @@ export default function Navbar() {
                   <Center>
                     <Avatar
                       size={'2xl'}
-                      src={'https://avatars.dicebear.com/api/male/username.svg'}
+                      src={'https://img.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg?w=826&t=st=1706153864~exp=1706154464~hmac=9385786fd730b1ab1c22fcc83cc844c744a2da9ec4d50d9a97ea99b302c5ee08'}
                     />
                   </Center>
                   

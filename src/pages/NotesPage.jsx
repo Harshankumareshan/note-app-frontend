@@ -43,12 +43,12 @@ export default function NotesPage() {
    
         
         <Box mt={20} padding={8}>
-              
+              <h6 style={{fontSize:"55px",fontStyle:'normal',textAlign:'center',color:"orange",marginBottom:'2%'}}> " Your Digital Notebook for Ideas and Insights "</h6>
             <Grid
                 gap={10}
-                w={"90%"}
+                w={{ base: "100%", md: "90%" }}
                 margin={"auto"}
-                gridTemplateColumns="repeat(4 ,1fr)"
+                gridTemplateColumns={{ base: "repeat(1, 1fr)", md: "repeat(4, 1fr)" }}
             >
                 {notes?.map((el) => (
                     <NoteCard {...el} />
